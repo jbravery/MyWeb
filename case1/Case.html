@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<title>练习项目</title>
+<meta charset="utf-8">
+<style>
+
+	a,address,b,big,blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var
+	{
+		margin: 0;
+		padding: 0;
+	}
+	
+	a
+	{
+		/*去除下划线*/
+		text-decoration: none;
+		font-size: 13px;
+		color: darkgray;
+	}
+
+	body
+	{
+		background: url("img/bg.jpg");
+		/*把背景图片扩展至足够大，以使背景图片完全覆盖背景区域*/
+		background-size: cover;
+		text-align: center;
+	}
+
+	#pannel
+	{
+		background: white;
+		display: inline-block;
+		text-align: left;
+		margin: 10%;
+		padding: 30px;
+		border-radius: 5px;/*设置圆角*/
+		box-shadow: -20px 10px 50px;	
+	}
+	
+	#pannel-header
+	{
+		text-align: center;
+	}
+	#pannel-header:first-child
+	{
+		font-size: 20px;
+		margin-bottom: 15px;
+		padding: 10px;
+		border-bottom: 1px solid #dddddd;
+	}
+	
+	#pannel-content
+	{
+
+	}
+	
+	.user-pwd
+	{
+		margin-bottom: 15px;
+		height: 38px;
+		position: relative;
+	}
+	
+	.user-pwd img
+	{
+		position: absolute;
+		left: 5px;
+		top: 6px;
+	}
+
+	.user-pwd input
+	{
+		width: 100%;
+		height: 100%;
+		padding-left: 38px;
+		box-sizing: border-box;
+		border-radius: 5px;
+		border: 1px solid #dddddd;
+	}
+
+	.user-pwd input:focus
+	{
+		outline: none;
+		border-color: red;
+		box-shadow: 0 0 5px yellow;
+	}
+
+	#setting
+	{
+		margin-bottom: 15px;
+	}
+
+	.forget-pwd
+	{
+		float: right;
+	}
+
+	#btn
+	{
+		width: 100%;
+		height:35px;
+		border:0px;
+		color: white;
+		background: orangered;
+		border-radius: 5px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	#btn:focus
+	{
+		outline: none;
+	}
+
+	#reg
+	{
+		font-size: 13px;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	#reg a
+	{
+		color:orangered; 
+	}
+
+	#pannel-footer
+	{
+		height: 38px;
+		line-height: 38px;
+		text-align: center;
+	}
+
+	#pannel-footer img
+	{
+		width: 30px;
+		vertical-align: middle;
+	}
+
+</style>
+</head>
+<body>
+
+<div id="pannel">
+	<div id="pannel-header">
+		<h2>网页前端&前端公司</h2>
+	</div>
+
+	<div id="pannel-content">
+		
+		<div class="user-pwd">
+			<img src="img/3.png">
+			<input type="text" placeholder="请输入用户名或手机号"/>
+		</div>
+
+		<div class="user-pwd">
+			<img src="img/2.png">
+			<input type="text" placeholder="请输入密码"/>
+		</div>
+
+		<div id="setting">
+			<a id="remeber" href="#"><input type="checkbox"/>下次自动登陆</a>
+			<a href="#" class="forget-pwd">忘记密码?</a>
+		</div>
+
+		<button id="btn">登陆</button>
+
+		<div id="reg">
+			还没有账号？<a href="#">立即注册</a>
+		</div>
+
+	<div id="pannel-footer">
+		<span>社交账号登陆</span>
+		<img src="img/4.png" alt="新浪"/>
+		<img src="img/5.png" alt="微信"/>
+		<img src="img/6.png" alt="QQ"/>
+	</div>
+
+</div>
+</body>
+</html>
+
+
+
