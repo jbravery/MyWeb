@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>case4</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td{
+    margin: 0;
+    padding: 0;
+}
+body{
+	margin: 0;
+	font-size: 12px;
+	background: url(images/new_index-bg.jpg) repeat-x top center #121824;
+	margin: auto;
+}
+ul, li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+form{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: 0;
+}
+a{
+    color: #ab9956;
+    text-decoration: none;
+    font-size: 12px;
+}
+.clear{
+    clear: both;
+}
+.login{
+	width: 810px;
+	height: 34px;
+	float: left;
+	padding-top: 8px;
+}
+.login .login_in{
+	width: 670px;
+	float: left;
+	vertical-align: middle;
+}
+.login .login_in input{
+	border: 0;
+	display: inline;
+	color: #ab9956;
+	width: 107px;
+	font-size: 12px;
+	margin-left: 6px;
+	margin-top: 5px;
+}
+.login .login_in input#username,.login .login_in input#password{
+	width: 107px;
+	height: 24px;
+	float: left;
+	line-height: 24px;
+	background: url(images/input_bg.png) no-repeat;
+	text-indent: 5px;
+	outline: 0;
+	padding: 0;
+}
+.login .login_in input#rmNum{
+	width: 85px;
+	height: 24px;
+	float: left;
+	line-height: 24px;
+	background: url(images/input_bg.png) no-repeat;
+	text-indent: 5px;
+	outline: 0;
+	padding: 0;
+}
+.login .login_in img{
+	vertical-align: bottom;
+	border: 0 none #000;
+	float: left;
+	margin-top: 5px;
+}
+.login .log{
+	width: 240px;
+	float: left;
+	margin-left: 5px;
+}
+.login .log .btn_login{
+	text-align: center;
+	background: url(images/btn_login.png) center top no-repeat;
+	width: 73px;
+	height: 33px;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	line-height: 33px;
+	color: #3f130a;
+	font-family: "Microsoft YaHei" ,SimSun,STHet,STSong;
+	font-size: 16px;
+	margin: 0;
+}
+.login .log .open_account{
+	margin-left: 5px;
+	float: left;
+	text-align: center;
+	background: url(images/btn_login.png) center top no-repeat;
+	width: 75px;
+	height: 33px;
+	display: inline-block;
+	cursor: pointer;
+	color: #3f130a;
+	line-height: 33px;
+	font-family: "Microsoft YaHei" ,SimSun,STHet,STSong;
+	font-size: 16px;
+}
+.login .log .forget{
+	width: 60px;
+	color: #ab9956;
+	text-align: center;
+	margin-left: 5px;
+	display: inline-block;
+	line-height: 29px;
+	text-decoration: underline;
+}
+.topnav{
+	width: 160px;
+	margin: 0 auto;
+	height: 46px;
+	float: right;
+}
+.topnav_r{
+	width: 150px;
+	padding: 10px 10px 0;
+	float: right;
+	margin-right: 10px;
+	line-height: 25px;
+	height: 36px;
+	text-align: left;
+}
+.topnav_r a{
+    color: #777777;
+}
+.topnav_r .l a{
+	display: inline-block;
+	width: 26px;
+	height: 24px;
+	float: right;
+	margin-right: 5px;
+}
+.topnav_r a.CH{
+	background: url(images/ico_bg.png) 0 0 no-repeat;
+}
+.top{
+	width: 1000px;
+	height: 208px;
+	margin: 0 auto;
+}
+.navigation{
+	width: 1000px;
+	height: 111px;
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.navigation ul{
+	width: 1000px;
+}
+.navigation ul li{
+	float: left;
+	display: block;
+	text-align: center;
+	padding-right: 3px;
+	position: relative;
+	height: 91px;
+	width: 102px;
+}
+.navigation ul li a{
+	display: block;
+	height: 91px;
+	width: 90px;
+	background: url(images/nav_hover.png) no-repeat -91px 0;
+	padding-top: 20px;
+}
+.navigation ul li a:hover, .navigation ul li a.active{
+	background: url(images/nav_hover.png) top center no-repeat;
+	color: #000000;
+}
+.navigation ul li.logo-ico{
+	width: 150px;
+	height: 200px;
+	float: left;
+	display: block;
+	left: 42.5%;
+	background: url(images/logo-ico-bg.png) no-repeat 7.5px 0;
+	position: absolute;
+	padding: 0;
+}
+#nav_all #left,#nav_all #right{
+	margin: 0;
+}
+#nav_all #right{
+	float: right;
+}
+.navigation ul li.logo-ico a:hover{
+	background: 0;
+}
+.content{
+	width: 1000px;
+	margin: 20px auto 0;
+	padding-top: 40px;
+}
+.casino_con{
+	width: 990px;
+	height: auto;
+	padding: 20px 0;
+	margin-top: -50px;
+}
+.casino_con dl{
+	width: 300px;
+	height: 139px;
+	background: url(images/game-bg.jpg) no-repeat;
+	background-size: 300px 140px;
+	float: left;
+	margin: 0 0 34px 25px;
+	display: inline-block;
+}
+.casino_con dl dt{
+	float: left;
+	width: 137px;
+	height: 86px;
+	padding: 20px 10px 15px 18;
+	margin: 20px 20px 20px 15px;
+}
+.casino_con dl dt img{
+	width: 125px;
+	height: 86px;
+}
+.casino_con dl dd{
+	width: 120px;
+	overflow: hidden;
+	padding: 20px 0 20px;
+	font-family: "Microsoft YaHei" ,SimSun,STHet,STSong;
+}
+.casino_con dl dd a.game_name{
+	display: block;
+	height: 40px;
+	overflow: hidden;
+	line-height: 16px;
+	color: #ffffff;
+	font-size: 16px;
+}
+.casino_con dl dd a:hover.game_name
+{
+    color: #fff;
+}
+.casino_con dl dd a.play{
+	display: block;
+	float: left;
+	width: 75px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	background: url(images/btn_login.png) no-repeat;
+	color: #3f130a;
+	font-size: 16px;
+	cursor: pointer;
+}
+.foot{
+	width: 1000px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.foot .foot_wp{
+	width: 1000px;
+	height: 150px;
+	margin: auto;
+}
+.foot .f_txt{
+	width: 600px;
+	margin: 0 auto;
+	color: #d2a763;
+	padding: 25px 30px 0 0;
+	float: right;
+	text-align: center;
+}
+.foot .f_txt p{
+	padding: 5px 0;
+}
+.foot .f_txt .f
+{
+    color: #ffffff;
+}
+.foot .f_txt a{
+	color: #d2b07f;
+	padding: 0 5px;
+	line-height: 30px
+}
+.foot .f_img{
+	width: 260px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 20px 0 10px 90px;
+	float: left;
+}
+.foot .f_txt img{
+	vertical-align: middle;
+}
+.foot .f_txt .fico a{
+	padding: 0 10px;
+	line-height: 30px;
+}
+</style>
+<body>
+<div id="page">
+    <div class="top">
+		<form name="LoginForm" id="LoginForm" action="#" method="post">
+            <div class="login">
+                <div class="login_in">
+                <input type="text" id="username" name="username" value="账号">
+                <input type="password" id="password" name="passwd" value="******">
+                <input type="text" id="rmNum" name="rmNum" value="验证码" class="input-text-02 form-text required">
+                    <img id="vPic" alt="" src="yzm.php" style="cursor:pointer;width:50px;height:20px;"/>
+                    <div class="log"><input id="btnLogin" class="btn_login" type="submit" value="登 入"/>
+                   		<a class="open_account" title="立即开户">立即开户</a><a title="忘记密码" class="forget">忘记密码?</a>
+                    </div>
+                </div>
+            </div>
+        </form>		
+		<div class="topnav">
+			<div class="topnav_r">
+				<div class="l"><a class="CH pngfix" href="#" title="CH"></a></div>
+				<a href="#" title="加入收藏">加入收藏</a>
+				<a href="#" title="设为首页">设为首页</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="navigation">
+			<ul id="nav_all">
+				<div id="left">
+					<li class="current">
+						<a class="active pngfix"><img class="pngfix" src="images/txt-home.png" alt="首页"/></a>
+					</li>
+		            <li>
+		                <a class="pngfix"><img src="images/txt-sports.png" alt="皇冠体育"/></a>
+		            </li>
+		            <li>
+		                <a class="pngfix"><img class="pngfix" src="images/txt-live.png" alt="真人娱乐"/></a>
+		            </li>
+		            <li>
+		                <a class="pngfix"><img class="pngfix" src="images/txt-xg.png" alt="彩票游戏"/></a>
+		            </li>
+		        </div>    
+	            <li class="logo-ico">
+	                <img src="images/logo.png" alt=""/>
+	            </li>
+	            <div id="right">
+		            <li>
+		                <a class="pngfix" id="right"><img class="pngfix" src="images/txt-slots.png" alt="六合彩"/></a>
+		            </li>
+		            <li>
+		                <a class="pngfix"><img class="pngfix" src="images/txt-xl.png" alt="时时彩"/></a>
+		            </li>
+		            <li>
+		                <a class="pngfix"><img class="pngfix" src="images/txt-coo.png" alt="手机下注"/></a>
+		            </li>
+		            <li>
+		                <a class="pngfix"><img class="pngfix" src="images/txt-service.png" alt="在线客服"/></a>
+		            </li>
+		        </div>    
+			</ul>	
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="content">
+		<div class="content_side_top">
+			<div class="content_side">
+				<div class="casino_con">
+					<dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">香港六合彩</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">重庆时时彩介绍</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">广东十分彩介绍</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">北京PK彩介绍</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">香港六合彩</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">上海时时乐介绍</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">北京快乐8介绍</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">香港六合彩</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">福彩3D介绍</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">香港六合彩介绍</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">香港六合彩</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#"><img alt="" src="images/game-icon-1.png"/></a></dt>
+	                    <dd><a class="game_name">香港六合彩</a><a class="play" href="#">立即游戏</a>
+	                </dl>
+	         		<div class="clear"></div>
+	        	</div>
+	    	</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="foot">
+		<div class="foot_wp">
+			<div class="f_img">
+				<img class="pngfix" src="images/foot_ico.png" alt="">
+			</div>
+			<div class="f_txt">
+				<p class="fico">
+					<a href="#"><img class="pngfix" src="images/fico_02.png" alt=""/></a>
+					<a href="#"><img class="pngfix" src="images/fico_03.png" alt=""/></a>
+		            <a href="#"><img class="pngfix" src="images/fico_04.png" alt=""/></a>
+		            <a href="#"><img class="pngfix" src="images/fico_05.png" alt=""/></a>
+		            <a href="#"><img class="pngfix" src="images/fico_06.png" alt=""/></a>
+		            <a href="#"><img class="pngfix" src="images/fico_01.png" alt=""/></a>
+		         </p>
+		        <p>
+		        	<a href="#">游戏规则</a>
+		        	 | <a href="#">关于我们</a> 
+		             | <a href="#">联系我们</a> 
+		             | <a href="#">合作伙伴</a>
+		             | <a href="#">存款帮助</a>
+		             | <a href="#">取款帮助</a>
+		             | <a href="#">常见问题</a></p>
+		        <p class="f">copyright @ 鸿胜娱乐城 reserved</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
